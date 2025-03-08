@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CENTRAL COAST MULTISERVICES</title>
+<title>805 MULTISERVICES</title>
 <style>
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,9 +39,7 @@
 <body onload="window.print()" onfocus="window.close">
     <div class="ticket" id="ticket">
         <div class="ticket-header">
-            <h1>CENTRAL COAST MULTISERVICES</h1>
-            <!-- Agregar una imagen al encabezado -->
-            <img src="images/Aspose.Words.02b1c9e5-9999-4ae4-a8c4-d9155b0bed52.001.png" alt="Logo" width="200">
+            <h1>805 MULTISERVICES</h1>
         </div>
         <div class="ticket-details">
             <div class="ticket-item">
@@ -60,46 +58,9 @@
             <div class="ticket-item">
                 <strong>Precio venta:</strong> $<span id="price"></span>
             </div>
-            <div class="ticket-item">
-                <strong>Pago cliente:</strong> $<span id="customerPayment"></span>
-            </div>
-            <div class="ticket-item">
-                <strong>Cambio:</strong> $<span id="change"></span>
-            </div>
-            <hr class="separator">
-            <div class="ticket-item">
-                <strong>Le atendió:</strong> <span id="executive"></span>
-            </div>
-            <div class="ticket-item">
-                <strong>Fecha:</strong> <span id="date"></span>
-            </div>
-        </div>
-    </div>
+            <div class="ticket
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const productName = urlParams.get('producto');
-            const customerName = urlParams.get('cliente');
-            const phoneNumber = urlParams.get('telefono');
-            const paymentMethod = urlParams.get('formadepago');
-            const price = parseFloat(urlParams.get('precio')).toFixed(2);
-            const customerPayment = parseFloat(urlParams.get('pagocliente')).toFixed(2);
-            const change = parseFloat(urlParams.get('cambio')).toFixed(2);
-            const executive = urlParams.get('leatendio');
-            const date = urlParams.get('fecha');
 
-            // Update ticket details
-            document.getElementById('productName').textContent = productName;
-            document.getElementById('customerName').textContent = customerName;
-            document.getElementById('phoneNumber').textContent = phoneNumber;
-            document.getElementById('paymentMethod').textContent = paymentMethod;
-            document.getElementById('price').textContent = price;
-            document.getElementById('customerPayment').textContent = customerPayment;
-            document.getElementById('change').textContent = change;
-            document.getElementById('executive').textContent = executive;
-            document.getElementById('date').textContent = date;
-        });
     </script>
 </body>
 </html>
